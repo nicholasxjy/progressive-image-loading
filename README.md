@@ -1,4 +1,4 @@
-#NProgressiveImage
+# NProgressiveImage
 
 ### How to use it
 
