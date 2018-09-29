@@ -13,3 +13,5 @@
   }
 </script>
 ```
+
+Great thanks to [http://www.quasimondo.com/StackBlurForCanvas/StackBlurDemo.html](http://www.quasimondo.com/StackBlurForCanvas/StackBlurDemo.html)
