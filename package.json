@@ -1,34 +1,44 @@
 {
-  "name": "progressive-image-loading",
-  "version": "1.0.0",
+  "name": "nico-progressive-image",
+  "version": "1.1.0",
   "description": "",
-  "main": "index.js",
+  "main": "dist/nico-progressive-image.cjs.js",
+  "module": "dist/nico-progressive-image.esm.js",
+  "browser": "dist/nico-progressive-image.min.js",
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server --mode development --progress --hot --color",
-    "build": "rimraf dist && NODE_ENV=production webpack --mode production"
+    "build": "rollup -c",
+    "dev": "rollup -c -w",
+    "demo": "http-server ./"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "progressive image",
+    "medium",
+    "loading"
+  ],
+  "author": "nicholas xue <yitaqi2011@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/nicholasxjy/progressive-image-loading.git"
+  },
   "license": "ISC",
   "devDependencies": {
-    "@babel/core": "^7.1.0",
-    "@babel/preset-env": "^7.1.0",
-    "autoprefixer": "^9.1.5",
-    "babel-eslint": "^10.0.1",
-    "babel-loader": "^8.0.4",
-    "css-loader": "^1.0.0",
-    "file-loader": "^2.0.0",
-    "html-webpack-plugin": "^3.2.0",
-    "postcss-loader": "^3.0.0",
-    "prettier": "^1.14.3",
-    "rimraf": "^2.6.2",
-    "style-loader": "^0.23.0",
-    "url-loader": "^1.1.1",
-    "webpack": "^4.20.2",
-    "webpack-cli": "^3.1.1",
-    "webpack-dev-server": "^3.1.9"
+    "@babel/core": "^7.3.4",
+    "@babel/preset-env": "^7.3.4",
+    "autoprefixer": "^9.5.0",
+    "http-server": "^0.11.1",
+    "prettier": "^1.16.4",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.6.0",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-commonjs": "^9.2.1",
+    "rollup-plugin-node-resolve": "^4.0.1",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-uglify": "^6.0.2"
   },
   "dependencies": {
     "lodash.debounce": "^4.0.8"
-  }
+  },
+  "files": [
+    "dist"
+  ]
 }

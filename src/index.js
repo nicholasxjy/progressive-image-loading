@@ -6,7 +6,9 @@ const defaultOption = {
   container: '',
   items: '',
   offsetTop: 10,
-  blurRadius: 10
+  blurRadius: 10,
+  widthAttr: 'data-width',
+  heightAttr: 'data-height'
 }
 
 function isInViewport(el) {
